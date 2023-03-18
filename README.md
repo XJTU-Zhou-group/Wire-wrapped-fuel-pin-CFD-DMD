@@ -59,3 +59,16 @@ Our code have files as follow:
 
    wire
    Comparison of pressure counter on wire surface between CFD and DMD at t=3s.
+   
+6.actual service condition
+6.1.This file include the snapshot matrix of U+, V+, W+ and P in the middle cross section.
+  
+  The snapshot matrix of U+, V+, W+, P are Data_u, Data_v, Data_w, Data_p, respectively.
+  
+6.2.compute_DMD_wirewrap.m is the main function of DMD method, and it contains the way to output variable information as .txt.
+  and it contains the mehtod to cauculate the confficient of determination(R^2).
+
+6.3.The midplane.dat contain the xyz position of each point and the grid information in cross section (The format of Tecplot).
+
+6.4.If you want to post process in Tecplot, you have to paste the variable information in txt file to midplane.dat.(For example midplane_DMD.dat and midplane_real.dat)
+  midplane_real.dat is CFD result, midplane_DMD.dat is DMD prediction.
